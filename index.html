@@ -1,44 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script type="module" src="./main.js"></script>
+    <title>Mi Reproductor de Música</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle">
-                    <span>back</span>
+
+    <div class="music-player-container">
+        <div class="search-bar">
+            <i class="fas fa-search icon"></i>
+            <input type="text" placeholder="Buscar canción, artista o álbum...">
+        </div>
+
+        <div class="current-song-section">
+            <img src="https://via.placeholder.com/250x250/cccccc/ffffff?text=Portada" alt="Portada de la canción" class="current-song-cover">
+            <h2 class="current-song-title">cancion CHIDA</h2>
+            <p class="current-song-artist">artista 1</p>
+
+            <div class="playback-controls">
+                <div class="time-stamps">
+                    <span class="current-time">0:30</span>
+                    <span class="total-time">3:45</span>
                 </div>
-                <div class="circle">
-                    <span>bars</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
                 </div>
-            </nav>
-
-            <div id="song-details">
-                <img src="./media/default_img.jpg" alt="" id="song-img">
-                <h1 id="title"></h1>
-                <h3 id="artist"></h3>
+                <div class="control-buttons">
+                    <button class="control-button"><i class="fas fa-backward"></i></button>
+                    <button class="control-button play-button"><i class="fas fa-play"></i></button>
+                    <button class="control-button"><i class="fas fa-forward"></i></button>
+                </div>
             </div>
+        </div>
 
-            <div class="audio">
-                <audio controls id="media" hidden>
-                    <!--<source id="audio" src="" type="audio/mpeg">-->
-                </audio>
-                <input type="range" value="0" id="progress">
+        <div class="playlist-section">
+            <h3>Siguientes Canciones</h3>
+            <div class="playlist-list">
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50x50/eeeeee/ffffff?text=C1" alt="Portada pequeña" class="playlist-item-cover">
+                    <div class="playlist-item-info">
+                        <p class="playlist-item-title">CANCION 1</p>
+                        <p class="playlist-item-artist">ARTISTA 1</p>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50x50/dddddd/ffffff?text=C2" alt="Portada pequeña" class="playlist-item-cover">
+                    <div class="playlist-item-info">
+                        <p class="playlist-item-title">CANCION 2</p>
+                        <p class="playlist-item-artist">ARTISTA 2</p>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50x50/cccccc/ffffff?text=C3" alt="Portada pequeña" class="playlist-item-cover">
+                    <div class="playlist-item-info">
+                        <p class="playlist-item-title">CANCION 3</p>
+                        <p class="playlist-item-artist">ARTISTA 3</p>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50x50/bbbbbb/ffffff?text=C4" alt="Portada pequeña" class="playlist-item-cover">
+                    <div class="playlist-item-info">
+                        <p class="playlist-item-title">CANCION 4</p>
+                        <p class="playlist-item-artist">ARTISTA 4</p>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50x50/aaaaaa/ffffff?text=C5" alt="Portada pequeña" class="playlist-item-cover">
+                    <div class="playlist-item-info">
+                        <p class="playlist-item-title">CANCION 5</p>
+                        <p class="playlist-item-artist">ARTISTA 5</p>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50x50/999999/ffffff?text=C6" alt="Portada pequeña" class="playlist-item-cover">
+                    <div class="playlist-item-info">
+                        <p class="playlist-item-title">CANCION 6</p>
+                        <p class="playlist-item-artist">ARTISTA 6</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="song-controls">
-                <span id="lastest">last</span>
-                <span id="play" class="play">play</span>
-                <span id="forward">forward</span>
-            </div>
-
         </div>
     </div>
+
 </body>
 </html>
