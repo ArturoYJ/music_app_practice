@@ -1,89 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Reproductor de Música</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>ENHA MUSIC</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/372c7aba57.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-
-    <div class="music-player-container">
-        <div class="search-bar">
-            <i class="fas fa-search icon"></i>
-            <input type="text" placeholder="Buscar canción, artista o álbum...">
+    <div id="container">
+        <div id="nav">
+            <div id="logo-nav">
+                <img src="media/logo.png" alt="">
+            <p>ENHA MUSIC</p>
+            </div>
+            <div id="input-nav">
+                <input type="search" id="search" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="options-nav">
+                <i class="fa-solid fa-minus"></i>
+                <i class="fa-solid fa-window-restore"></i>
+                
+                <i class="fa-solid fa-xmark"></i>
+            </div>
         </div>
+        
+    <div id="content">
+        <div id="side-bar">
+            <div id="search-content">
+                <input type="search" id="search-content">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="info-content">
+                <div id="explore">
+                <i class="fa-solid fa-map-pin"></i>
+                <a href="#">Explora</a>
+            </div>
+            <div id="playlist-icon">
+                <i class="fa-regular fa-circle"></i>
+                <a href="#">Mis playlist</a>
+            </div>
+            <div id="heart">
+                <i class="fa-regular fa-heart"></i>
+                <a href="#">Me gusta</a>
+            </div>
+            </div>
 
-        <div class="current-song-section">
-            <img src="https://via.placeholder.com/250x250/cccccc/ffffff?text=Portada" alt="Portada de la canción" class="current-song-cover">
-            <h2 class="current-song-title">cancion CHIDA</h2>
-            <p class="current-song-artist">artista 1</p>
-
-            <div class="playback-controls">
-                <div class="time-stamps">
-                    <span class="current-time">0:30</span>
-                    <span class="total-time">3:45</span>
+            <div id="playlist">
+                <div id="title">
+                    <H2>Playlist</H2>
+                <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar"></div>
-                </div>
-                <div class="control-buttons">
-                    <button class="control-button"><i class="fas fa-backward"></i></button>
-                    <button class="control-button play-button"><i class="fas fa-play"></i></button>
-                    <button class="control-button"><i class="fas fa-forward"></i></button>
+                <div id="playlist-title">
+                    <h4>Youu</h4>
+                    <h4>You</h4>
+                    <h4>Yoii</h4>
+                    <h4>IASD</h4>
                 </div>
             </div>
         </div>
+        </div>
 
-        <div class="playlist-section">
-            <h3>Siguientes Canciones</h3>
-            <div class="playlist-list">
-                <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50x50/eeeeee/ffffff?text=C1" alt="Portada pequeña" class="playlist-item-cover">
-                    <div class="playlist-item-info">
-                        <p class="playlist-item-title">CANCION 1</p>
-                        <p class="playlist-item-artist">ARTISTA 1</p>
-                    </div>
-                </div>
-                <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50x50/dddddd/ffffff?text=C2" alt="Portada pequeña" class="playlist-item-cover">
-                    <div class="playlist-item-info">
-                        <p class="playlist-item-title">CANCION 2</p>
-                        <p class="playlist-item-artist">ARTISTA 2</p>
-                    </div>
-                </div>
-                <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50x50/cccccc/ffffff?text=C3" alt="Portada pequeña" class="playlist-item-cover">
-                    <div class="playlist-item-info">
-                        <p class="playlist-item-title">CANCION 3</p>
-                        <p class="playlist-item-artist">ARTISTA 3</p>
-                    </div>
-                </div>
-                <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50x50/bbbbbb/ffffff?text=C4" alt="Portada pequeña" class="playlist-item-cover">
-                    <div class="playlist-item-info">
-                        <p class="playlist-item-title">CANCION 4</p>
-                        <p class="playlist-item-artist">ARTISTA 4</p>
-                    </div>
-                </div>
-                <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50x50/aaaaaa/ffffff?text=C5" alt="Portada pequeña" class="playlist-item-cover">
-                    <div class="playlist-item-info">
-                        <p class="playlist-item-title">CANCION 5</p>
-                        <p class="playlist-item-artist">ARTISTA 5</p>
-                    </div>
-                </div>
-                <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50x50/999999/ffffff?text=C6" alt="Portada pequeña" class="playlist-item-cover">
-                    <div class="playlist-item-info">
-                        <p class="playlist-item-title">CANCION 6</p>
-                        <p class="playlist-item-artist">ARTISTA 6</p>
-                    </div>
-                </div>
+        <div id="principal">
+            <div id="content-new">
+                <h4>New album</h4>
+                <h1>MAN'S BEST FRIEND</h1>
+                <h4>Sabrina Carpenter</h4>
             </div>
         </div>
+
+
+        
     </div>
-
 </body>
 </html>
